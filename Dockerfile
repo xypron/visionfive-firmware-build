@@ -39,4 +39,4 @@ WORKDIR /home/user/JH7100_secondBoot/build
 RUN git checkout f93f109c75ee75fe404a710a92eb9bac31eb7ec9
 RUN make clean
 RUN make
-RUN cp bootloader-JH7100-*.bin.out /home/user/artifacts/bootloader-JH7100.bin.out
+RUN ./convert bootloader-JH7100-*.bin.out /home/user/artifacts/bootloader-JH7100.bin.out
